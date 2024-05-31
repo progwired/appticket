@@ -15,10 +15,6 @@ export const navData = {
     ],
     user: [
         {
-            label: "theme",
-            href: "/theme"
-        },
-        {
             label: "login",
             href: "/login"
         },

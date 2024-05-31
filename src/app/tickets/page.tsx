@@ -1,9 +1,15 @@
+import db from '@/db'
 import React from 'react'
 
-const TicketsPage = () => {
+const TicketsPage = async () => {
+    const tickets = await db.ticket.findMany()
     return (
         <div>
-            Tickets Page
+            {
+                tickets.map(each => <div key={each.id}>
+                    {each.title}
+                </div>)
+            }
         </div>
     )
 }
