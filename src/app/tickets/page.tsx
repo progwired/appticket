@@ -1,9 +1,8 @@
 import React from 'react'
 import db from '@/db'
 import TicketTable from './TicketTable'
-import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { routes } from '@/lib/routes'
+import { routes } from '@/routes'
 
 const TicketsPage = async () => {
     const tickets = await db.ticket.findMany()

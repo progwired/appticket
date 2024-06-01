@@ -8,4 +8,13 @@ export const routes = {
     ticketsNew() {
         return "/tickets/new"
     },
+    users() {
+        return "/users"
+    },
+    login() {
+        return "/login"
+    },
+    signup() {
+        return "/signup"
+    },
 }

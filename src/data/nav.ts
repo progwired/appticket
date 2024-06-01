@@ -1,26 +1,28 @@
+import { routes } from "@/routes";
+
 export const navData = {
     main: [
         {
             label: "dashboard",
-            href: "/"
+            href: routes.home()
         },
         {
             label: "tickets",
-            href: "/tickets"
+            href: routes.tickets()
         },
         {
             label: "users",
-            href: "/users"
+            href: routes.users()
         },
     ],
     user: [
         {
             label: "login",
-            href: "/login"
+            href: routes.login()
         },
         {
             label: "signup",
-            href: "/signup"
+            href: routes.signup()
         }
     ]
 }
